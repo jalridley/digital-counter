@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["digitalMono", ...defaultTheme.fontFamily.sans],
+        sans: ["digitalMonoItalic", ...defaultTheme.fontFamily.sans],
       },
     },
   },
@@ -15,8 +15,8 @@ module.exports = {
     plugin(function ({ addBase }) {
       addBase({
         "@font-face": {
-          fontFamily: "digitalMono",
-          src: "url(/src/fonts/digital-7.mono.ttf)",
+          fontFamily: "digitalMonoItalic",
+          src: "url(/src/fonts/digital-7.monoitalic.ttf)",
         },
       });
     }),
