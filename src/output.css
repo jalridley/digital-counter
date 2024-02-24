@@ -562,6 +562,18 @@ video {
   inset: 0px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.m-5 {
+  margin: 1.25rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -614,6 +626,58 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.mr-8 {
+  margin-right: 2rem;
+}
+
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
+.mr-14 {
+  margin-right: 3.5rem;
+}
+
+.mr-24 {
+  margin-right: 6rem;
+}
+
+.mr-16 {
+  margin-right: 4rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mr-12 {
+  margin-right: 3rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .flex {
   display: flex;
 }
@@ -626,20 +690,105 @@ video {
   height: 100%;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .w-\[529px\] {
   width: 529px;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
+.w-\[1060px\] {
+  width: 1060px;
+}
+
+.w-\[2060px\] {
+  width: 2060px;
+}
+
+.w-\[1260px\] {
+  width: 1260px;
+}
+
+.w-\[1160px\] {
+  width: 1160px;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-52 {
+  width: 13rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[2480px\] {
+  width: 2480px;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-\[400px\] {
+  width: 400px;
 }
 
 .flex-1 {
   flex: 1 1 0%;
 }
 
+.shrink-0 {
+  flex-shrink: 0;
+}
+
 .flex-col {
   flex-direction: column;
 }
 
+.items-center {
+  align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .overflow-hidden {
@@ -675,6 +824,22 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.p-14 {
+  padding: 3.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .text-left {
@@ -733,6 +898,21 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-8xl {
+  font-size: 6rem;
+  line-height: 1;
 }
 
 .font-bold {
