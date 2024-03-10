@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
-    <script src="./main.js" type="module"></script>
     <title>Digital Counter</title>
   </head>
   <body class="bg-gray-950 h-screen">
@@ -85,6 +84,7 @@
             000000
           </div>
           <div
+            id="1"
             class="absolute inset-0 flex-1 h-full text-center tracking-[.15em] mr-[-.15em] text-orange-500"
             style="text-shadow: 0px 0px 20px #f97316"
           >
@@ -116,15 +116,12 @@
         </h2>
       </section>
     </div>
-    <div class="flex mt-20">
-      <p class="text-white text-5xl mr-5">
-        <span>random score:</span><span id="1"></span>
-      </p>
-      <button
-        class="bg-red-700 text-4xl w-24 h-24 text-lime-300 rounded-full shadow-md shadow-lime-300 hover:shadow-none flex flex-col justify-center items-center"
-      >
-        <span class="pt-1">Play</span>
-      </button>
-    </div>
+    <button
+      class="bg-red-700 text-4xl w-24 h-24 text-lime-300 rounded-full shadow-md shadow-lime-300 hover:shadow-none flex flex-col justify-center items-center"
+      onclick="randomNumber()"
+    >
+      <span class="pt-1">Play</span>
+    </button>
+    <script src="./main.js"></script>
   </body>
 </html>
