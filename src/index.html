@@ -120,12 +120,21 @@
         </h2>
       </section>
     </div>
-    <button
-      class="bg-red-700 text-4xl w-32 h-32 text-lime-300 rounded-full shadow-md shadow-lime-300 hover:shadow-none flex flex-col justify-center items-center"
-      onclick="loop(5)"
-    >
-      <span class="pt-1">Play</span>
-    </button>
+    <div class="flex justify-center mt-10">
+      <button
+        class="mr-10 bg-red-700 text-4xl w-32 h-32 text-lime-300 rounded-full shadow-md shadow-lime-300 hover:shadow-none flex flex-col justify-center items-center"
+        onclick="play(5)"
+      >
+        <span class="pt-1">Play</span>
+      </button>
+      <button
+        class="bg-red-700 text-4xl w-32 h-32 text-lime-300 rounded-full shadow-md shadow-lime-300 hover:shadow-none flex flex-col justify-center items-center"
+        onclick="reset(5)"
+      >
+        <span class="pt-1">Reset</span>
+      </button>
+    </div>
+
     <script src="./main.js"></script>
   </body>
 </html>

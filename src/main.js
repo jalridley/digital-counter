@@ -7,8 +7,21 @@ function randomNumber(id) {
   }
 }
 
-function loop(number) {
+function resetToZero(id) {
+  const element = document.getElementById(id);
+  if (element) {
+    element.innerHTML = "000000";
+  }
+}
+
+function play(number) {
   for (let i = 1; i <= number; i++) {
     randomNumber(i);
+  }
+}
+
+function reset(number) {
+  for (let i = 1; i <= number; i++) {
+    resetToZero(i);
   }
 }
