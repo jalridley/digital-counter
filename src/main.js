@@ -1,17 +1,17 @@
-function randomNumber(id) {
+function elementSetText(id, number) {
   const element = document.getElementById(id);
-  if (element) {
-    element.innerHTML = Math.floor(Math.random() * 999999)
-      .toString()
-      .padStart(6, '0');
-  }
+  element.textContent = number;
 }
 
-function resetToZero(id) {
-  const element = document.getElementById(id);
-  if (element) {
-    element.innerHTML = '000000';
-  }
+function randomNumber(id) {
+  const randomNumber = Math.floor(Math.random() * 999999)
+    .toString()
+    .padStart(6, '0');
+  elementSetText(id, randomNumber);
+}
+
+function resetToZero(id, number = '000000') {
+  elementSetText(id, number);
 }
 
 function play(number) {
