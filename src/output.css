@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: digitalMonoItalic, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -445,9 +445,15 @@ video {
 }
 
 @font-face {
-  font-family: digitalMonoItalic;
+  font-family: digital-mono-italic;
 
-  src: url(/src/fonts/digital-7.monoitalic.ttf);
+  src: url(/src/fonts/digital-7-monoitalic.ttf);
+}
+
+@font-face {
+  font-family: digital-mono;
+
+  src: url(/src/fonts/digital-7-mono.ttf);
 }
 
 *, ::before, ::after {
@@ -687,6 +693,14 @@ video {
   text-align: center;
 }
 
+.font-digitalMono {
+  font-family: digital-mono, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.font-digitalMonoItalic {
+  font-family: digital-mono-italic, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -705,11 +719,6 @@ video {
 .text-9xl {
   font-size: 8rem;
   line-height: 1;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -778,10 +787,6 @@ video {
 }
 
 @media print {
-  .print\:block {
-    display: block;
-  }
-
   .print\:hidden {
     display: none;
   }
