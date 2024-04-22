@@ -3,14 +3,14 @@ function randomNumber(id) {
   if (element) {
     element.innerHTML = Math.floor(Math.random() * 999999)
       .toString()
-      .padStart(6, "0");
+      .padStart(6, '0');
   }
 }
 
 function resetToZero(id) {
   const element = document.getElementById(id);
   if (element) {
-    element.innerHTML = "000000";
+    element.innerHTML = '000000';
   }
 }
 
