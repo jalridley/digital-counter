@@ -7,11 +7,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        digitalMonoItalic: [
+        'digital-mono-italic': [
           'digital-mono-italic',
           ...defaultTheme.fontFamily.sans,
         ],
-        digitalMono: ['digital-mono', ...defaultTheme.fontFamily.sans],
+        'digital-mono': ['digital-mono', ...defaultTheme.fontFamily.sans],
       },
     },
   },
