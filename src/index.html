@@ -106,24 +106,37 @@
       </section>
     </div>
     <div class="print:hidden flex justify-center mt-20 font-digital-mono">
-      <button
-        class="mr-10 bg-lime-500 text-4xl w-32 h-32 text-lime-50 rounded-full flex flex-col justify-center items-center"
-        onclick="play(5)"
+      <div
+        class="relative w-32 h-32 rounded-full ring-[12px] ring-gray-300 mr-20"
       >
-        Play
-      </button>
-      <button
-        class="mr-10 bg-red-600 text-4xl w-32 h-32 text-red-50 rounded-full flex flex-col justify-center items-center"
-        onclick="reset(5)"
+        <button
+          id="play"
+          class="absolute bg-lime-500 text-4xl w-32 h-32 text-lime-50 rounded-full flex flex-col justify-center items-center animate-pulse"
+          onclick="play(5)"
+        >
+          Play
+        </button>
+      </div>
+      <div
+        class="relative w-32 h-32 rounded-full ring-[12px] ring-gray-300 mr-20"
       >
-        Reset
-      </button>
-      <button
-        class="bg-amber-500 text-amber-50 text-4xl w-32 h-32 rounded-full flex flex-col justify-center items-center"
-        onclick="window.print()"
-      >
-        Print
-      </button>
+        <button
+          id="reset"
+          class="mr-10 bg-red-600 text-4xl w-32 h-32 text-red-50 rounded-full flex flex-col justify-center items-center"
+          onclick="reset(5)"
+        >
+          Reset
+        </button>
+      </div>
+      <div class="relative w-32 h-32 rounded-full ring-[12px] ring-gray-300">
+        <button
+          id="print"
+          class="bg-amber-500 text-amber-50 text-4xl w-32 h-32 rounded-full flex flex-col justify-center items-center animate-pulse"
+          onclick="window.print()"
+        >
+          Print
+        </button>
+      </div>
     </div>
     <script src="./main.js"></script>
   </body>
