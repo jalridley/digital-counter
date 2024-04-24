@@ -15,9 +15,18 @@ function resetToZero(id, number = '000000') {
 }
 
 function play(number) {
+  removeAnimateClassTimer('play', 2000);
   for (let i = 1; i <= number; i++) {
     randomNumber(i);
   }
+}
+
+function removeAnimateClassTimer(id, delay) {
+  const element = document.getElementById(id);
+  element.classList.add('animate-none');
+  setTimeout(() => {
+    element.classList.remove('animate-none');
+  }, delay);
 }
 
 function reset(number) {
