@@ -34,3 +34,8 @@ function removeAnimateClassTimer(id, delay) {
     element.classList.add('motion-safe:animate-pulse');
   }, delay);
 }
+
+function printScores() {
+  removeAnimateClassTimer('print-button', 2000);
+  window.print();
+}
