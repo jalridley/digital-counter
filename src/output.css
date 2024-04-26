@@ -1002,6 +1002,11 @@ video {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.shadow-amber-700 {
+  --tw-shadow-color: #b45309;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .outline {
   outline-style: solid;
 }
@@ -1105,6 +1110,11 @@ video {
 
 .hover\:shadow-amber-800:hover {
   --tw-shadow-color: #92400e;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.hover\:shadow-amber-700:hover {
+  --tw-shadow-color: #b45309;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
