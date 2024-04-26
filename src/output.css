@@ -1158,6 +1158,10 @@ video {
   .motion-safe\:animate-pulse {
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
+
+  .hover\:motion-safe\:animate-none:hover {
+    animation: none;
+  }
 }
 
 @media print {
