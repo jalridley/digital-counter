@@ -13,6 +13,11 @@ module.exports = {
         ],
         'digital-mono': ['digital-mono', ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: {
+        'radial-gradient-green': 'radial-gradient(#d9f99d, #84cc16, #65a30d)',
+        'radial-gradient-red': 'radial-gradient(#f87171, #dc2626, #b91c1c)',
+        'radial-gradient-amber': 'radial-gradient(#fde68a, #f59e0b, #d97706)',
+      },
     },
   },
   plugins: [
