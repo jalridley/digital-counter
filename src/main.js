@@ -6,24 +6,27 @@ function elementSetNumber(id, number) {
 }
 
 function randomNumber(id) {
-  const randomNumber = Math.floor(Math.random() * 999999)
-    .toString()
-    .padStart(6, '0');
+  let digits = id <= 4 ? 6 : 2;
+  let randomNumber = Math.floor(
+    Math.random() * Math.pow(10, digits)
+  ).toString();
+  randomNumber = randomNumber.padStart(digits, '0');
+
   elementSetNumber(id, randomNumber);
   resetButton.classList.add('motion-safe:animate-pulse');
 }
 
-function resetToZero(elementCount) {
+function resetToZero(elementCount = 6) {
   for (let id = 1; id <= elementCount; id++) {
-    elementSetNumber(id, '000000');
+    elementSetNumber(id, id <= 4 ? '000000' : '00');
   }
   resetButton.classList.remove('motion-safe:animate-pulse');
 }
 
-function play(number) {
+function play(numberOfElements) {
   removeAnimateClassTimer('play-button', 2000);
-  for (let i = 1; i <= number; i++) {
-    randomNumber(i);
+  for (let id = 1; id <= numberOfElements; id++) {
+    randomNumber(id);
   }
 }
 
