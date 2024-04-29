@@ -6,7 +6,7 @@ function elementSetNumber(id, number) {
 }
 
 function generateRandomNumbers(numberOfElements) {
-  removeAnimateClassTimer('play-button', 2000);
+  removeAndAddAnimateClassTimer('play-button', 2000);
   for (let id = 1; id <= numberOfElements; id++) {
     const digits = id <= 4 ? 6 : 2;
     let randomNumber = Math.floor(
@@ -26,7 +26,7 @@ function resetToZero(elementCount = 6) {
   resetButton.classList.remove('motion-safe:animate-pulse');
 }
 
-function removeAnimateClassTimer(id, delay) {
+function removeAndAddAnimateClassTimer(id, delay) {
   const element = document.getElementById(id);
   element.classList.remove('motion-safe:animate-pulse');
   setTimeout(() => {
@@ -35,6 +35,6 @@ function removeAnimateClassTimer(id, delay) {
 }
 
 function printScores() {
-  removeAnimateClassTimer('print-button', 2000);
+  removeAndAddAnimateClassTimer('print-button', 2000);
   window.print();
 }
