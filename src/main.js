@@ -5,29 +5,39 @@ function elementSetNumber(id, number) {
   element.textContent = number;
 }
 
-function randomNumber(id) {
-  const randomNumber = Math.floor(Math.random() * 999999)
-    .toString()
-    .padStart(6, '0');
-  elementSetNumber(id, randomNumber);
+function generateRandomNumbers(numberOfElements) {
+  removeAndAddAnimateClassTimer('play-button', 2000);
+  for (let id = 1; id <= numberOfElements; id++) {
+    const digits = id <= 4 ? 6 : 2;
+    let randomNumber;
+
+    if (digits === 2) {
+      randomNumber = Math.floor(Math.random() * 11).toString();
+      randomNumber = randomNumber.padStart(digits, '0');
+    } else {
+      randomNumber = Math.floor(
+        Math.random() * Math.pow(10, digits)
+      ).toString();
+      randomNumber = randomNumber.padStart(digits, '0');
+    }
+
+    if (digits === 2 && randomNumber < 10) {
+      randomNumber = randomNumber.padStart(2, '0');
+    }
+
+    elementSetNumber(id, randomNumber);
+  }
   resetButton.classList.add('motion-safe:animate-pulse');
 }
 
-function resetToZero(elementCount) {
+function resetToZero(elementCount = 6) {
   for (let id = 1; id <= elementCount; id++) {
-    elementSetNumber(id, '000000');
+    elementSetNumber(id, id <= 4 ? '000000' : '00');
   }
   resetButton.classList.remove('motion-safe:animate-pulse');
 }
 
-function play(number) {
-  removeAnimateClassTimer('play-button', 2000);
-  for (let i = 1; i <= number; i++) {
-    randomNumber(i);
-  }
-}
-
-function removeAnimateClassTimer(id, delay) {
+function removeAndAddAnimateClassTimer(id, delay) {
   const element = document.getElementById(id);
   element.classList.remove('motion-safe:animate-pulse');
   setTimeout(() => {
@@ -36,6 +46,6 @@ function removeAnimateClassTimer(id, delay) {
 }
 
 function printScores() {
-  removeAnimateClassTimer('print-button', 2000);
+  removeAndAddAnimateClassTimer('print-button', 2000);
   window.print();
 }
