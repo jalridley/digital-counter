@@ -3,20 +3,22 @@
 @tailwind utilities;
 
 .score-window {
+  position: relative;
   display: flex;
-  font-size: 8rem /* 128px */;
-  line-height: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-  height: 113px;
   print-color-adjust: exact;
   -webkit-print-color-adjust: exact;
 }
 
 .base-numbers {
+  position: absolute;
+  height: 100%;
   display: flex;
   flex: 1 1 0%;
   align-items: center;
-  justify-content: center;
   letter-spacing: 0.15em;
-  margin-right: -0.15em;
+  padding-left: 0.15em;
 }
