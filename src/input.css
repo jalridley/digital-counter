@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.print-color-adjust {
-  print-color-adjust: exact;
-  -webkit-print-color-adjust: exact;
-}
-
 .score-window {
   display: flex;
   font-size: 8rem /* 128px */;
