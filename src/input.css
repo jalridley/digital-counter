@@ -17,3 +17,15 @@
   print-color-adjust: exact;
   -webkit-print-color-adjust: exact;
 }
+
+.gray-zeros {
+  position: relative;
+  display: flex;
+  flex: 1 1 0%;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.15em;
+  color: rgb(203 213 225 / var(--tw-text-opacity));
+  --tw-text-opacity: 0.25;
+  margin-right: -0.15em;
+}
