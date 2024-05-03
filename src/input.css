@@ -6,3 +6,14 @@
   print-color-adjust: exact;
   -webkit-print-color-adjust: exact;
 }
+
+.score-window {
+  position: relative;
+  display: flex;
+  font-size: 8rem /* 128px */;
+  line-height: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+  height: 113px;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
