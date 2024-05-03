@@ -8,7 +8,6 @@
 }
 
 .score-window {
-  position: relative;
   display: flex;
   font-size: 8rem /* 128px */;
   line-height: 1;
@@ -18,14 +17,11 @@
   -webkit-print-color-adjust: exact;
 }
 
-.gray-zeros {
-  position: relative;
+.base-numbers {
   display: flex;
   flex: 1 1 0%;
   align-items: center;
   justify-content: center;
   letter-spacing: 0.15em;
-  color: rgb(203 213 225 / var(--tw-text-opacity));
-  --tw-text-opacity: 0.25;
   margin-right: -0.15em;
 }
