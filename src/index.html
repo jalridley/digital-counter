@@ -11,8 +11,8 @@
       <section
         class="print:bg-white print:shadow-none shadow-xl shadow-lime-300 p-8 bg-teal-500 rounded-md mr-5 font-digital-mono-italic"
       >
-        <span class="flex print:flex-col mb-16">
-          <div class="score-window h-[113px] w-[489px] mr-10">
+        <span class="flex print:flex-col mb-16 print:mb-4">
+          <div class="score-window h-[113px] w-[489px] mr-10 print:mb-4">
             <div class="base-numbers text-slate-300 text-opacity-25">
               000000
             </div>
@@ -28,15 +28,17 @@
         </span>
 
         <!-- small score windows -->
-        <span class="flex justify-between items-center print:flex-col mb-16">
-          <div class="score-window h-[113px] w-[170px]">
+        <span
+          class="flex justify-between items-center print:flex-col mb-16 print:mb-4"
+        >
+          <div class="score-window h-[113px] w-[170px] print:mb-4">
             <div class="base-numbers text-slate-300 text-opacity-25">00</div>
             <div id="5" class="base-numbers text-orange-500 z-10">00</div>
           </div>
 
           <!-- TITLE -->
           <h1
-            class="relative text-[90px] font-bold font-digital-mono flex justify-center items-center text-teal-100 -rotate-12"
+            class="print:hidden relative text-[90px] font-bold font-digital-mono flex justify-center items-center text-teal-100 -rotate-12"
           >
             <span class="absolute text-[9rem] z-0 text-shadow">⚡️</span>
             <span class="relative z-10 bottom-10 mr-10 text-shadow"
@@ -52,7 +54,7 @@
         </span>
 
         <span class="flex print:flex-col">
-          <div class="score-window h-[113px] w-[489px] mr-10">
+          <div class="score-window h-[113px] w-[489px] mr-10 print:mb-4">
             <div class="base-numbers text-slate-300 text-opacity-25">
               000000
             </div>

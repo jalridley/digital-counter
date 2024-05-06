@@ -1016,6 +1016,14 @@ video {
 }
 
 @media print {
+  .print\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .print\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .print\:hidden {
     display: none;
   }
