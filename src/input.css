@@ -22,3 +22,11 @@
   letter-spacing: 0.15em;
   padding-left: 0.15em;
 }
+
+.text-shadow {
+  text-shadow: 6px 7px 0px black;
+}
+
+.text-shadow-light {
+  text-shadow: 3px 3px 0px #00ff00;
+}
