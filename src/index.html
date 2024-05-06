@@ -6,7 +6,7 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Pinball Wizard</title>
   </head>
-  <body class="print:bg-white bg-slate-950 flex flex-col items-center">
+  <body class="print:bg-white bg-slate-950 flex flex-col items-center px-5">
     <div class="flex justify-center my-5 2xl:mt-10">
       <section
         class="print:bg-white print:shadow-none shadow-xl shadow-lime-300 p-8 bg-radial-gradient-teal rounded-md mr-5 font-digital-mono-italic"
@@ -125,13 +125,15 @@
       </section>
     </div>
     <section
-      class="print:hidden w-3/4 2xl:w-1/2 shrink-0 mt-5 font-digital-mono text-teal-100 tracking-widest"
+      class="print:hidden w-full lg:w-3/4 2xl:w-1/2 mt-5 font-digital-mono text-teal-100 tracking-widest"
     >
       <h2 class="font-bold text-center mb-5 text-6xl text-shadow-light">
         Score Generator
       </h2>
-      <div class="flex text-4xl">
-        <div class="mr-20 shadow-xl shadow-lime-300 p-8 rounded-md">
+      <div class="lg:flex text-4xl">
+        <div
+          class="lg:mr-20 shadow-xl shadow-lime-300 p-5 rounded-md mb-8 lg:mb-0"
+        >
           <p class="mb-5">
             Got a vintage pinball machine backglass wall mounted or in a
             lightbox?
