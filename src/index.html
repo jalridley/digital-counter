@@ -9,9 +9,10 @@
   <body class="print:bg-white bg-slate-950">
     <div class="flex justify-center mt-20">
       <section
-        class="print:bg-white print:shadow-none shadow-xl shadow-lime-300 p-5 w-[529px] bg-teal-500 rounded-md mr-5 font-digital-mono-italic"
+        class="print:bg-white print:shadow-none shadow-xl shadow-lime-300 p-5 bg-teal-500 rounded-md mr-5 font-digital-mono-italic"
       >
-        <div class="score-window h-[113px] w-[489px] mb-8 shrink-0">
+      <span class="flex print:flex-col">
+        <div class="score-window h-[113px] w-[489px] mb-8 shrink-0 mr-10">
           <div class="base-numbers text-slate-300 text-opacity-25">000000</div>
           <div id="1" class="base-numbers text-orange-500 z-10">000000</div>
         </div>
@@ -20,8 +21,10 @@
           <div class="base-numbers text-slate-300 text-opacity-25">000000</div>
           <div id="2" class="base-numbers text-orange-500 z-10">000000</div>
         </div>
-
-        <div class="score-window h-[113px] w-[489px] mb-8 shrink-0">
+      </span>
+       
+      <span class="flex print:flex-col">
+        <div class="score-window h-[113px] w-[489px] mb-8 shrink-0 mr-10">
           <div class="base-numbers text-slate-300 text-opacity-25">000000</div>
           <div id="3" class="base-numbers text-orange-500 z-10">000000</div>
         </div>
@@ -30,20 +33,73 @@
           <div class="base-numbers text-slate-300 text-opacity-25">000000</div>
           <div id="4" class="base-numbers text-orange-500 z-10">000000</div>
         </div>
+      </span>
 
         <!-- small score windows -->
-        <div class="flex justify-between">
-          <div class="score-window h-[113px] mb-8 w-1/3">
+        <div class="flex justify-between print:flex-col">
+          <div class="score-window h-[113px] mb-8 w-[170px]">
             <div class="base-numbers text-slate-300 text-opacity-25">00</div>
             <div id="5" class="base-numbers text-orange-500 z-10">00</div>
           </div>
-          <div class="score-window h-[113px] mb-8 w-1/3">
+          <div class="print:hidden flex justify-center mt-20 font-digital-mono">
+            <div
+              class="relative h-40 w-40 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 mr-20 select-none shrink-0"
+            >
+              <div class="absolute inset-5 rounded-full bg-lime-900"></div>
+              <div
+                class="absolute inset-5 -translate-y-3 rounded-full bg-lime-800 hover:-translate-y-4 active:-translate-y-1.5 transition-transform duration-700 will-change-transform hover:duration-300 active:duration-75"
+              >
+                <button
+                  id="play-button"
+                  class="w-full h-full rounded-full bg-radial-gradient-green text-4xl text-slate-950 motion-safe:animate-pulse hover:motion-safe:animate-none shadow-lg shadow-lime-700 hover:shadow-xl hover:shadow-lime-700 active:shadow-none hover:brightness-110"
+                  onclick="generateRandomNumbers(6)"
+                >
+                  Play
+                </button>
+              </div>
+            </div>
+      
+            <div
+              class="relative h-40 w-40 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 mr-20 select-none shrink-0"
+            >
+              <div class="absolute inset-5 rounded-full bg-red-950"></div>
+              <div
+                class="absolute inset-5 -translate-y-3 rounded-full bg-red-800 hover:-translate-y-4 active:-translate-y-1.5 transition-transform duration-700 will-change-transform hover:duration-300 active:duration-75"
+              >
+                <button
+                  id="reset-button"
+                  class="w-full h-full rounded-full bg-radial-gradient-red text-4xl text-slate-950 motion-safe:animate-pulse hover:motion-safe:animate-none shadow-lg hover:shadow-xl hover:shadow-red-800 shadow-red-800 active:shadow-none hover:brightness-110"
+                  onclick="resetToZero(6)"
+                >
+                  Reset
+                </button>
+              </div>
+            </div>
+      
+            <div
+              class="relative h-40 w-40 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 select-none shrink-0"
+            >
+              <div class="absolute inset-5 rounded-full bg-amber-900"></div>
+              <div
+                class="absolute inset-5 -translate-y-3 rounded-full bg-amber-800 hover:-translate-y-4 active:-translate-y-1.5 transition-transform duration-700 will-change-transform hover:duration-300 active:duration-75"
+              >
+                <button
+                  id="print-button"
+                  class="w-full h-full rounded-full bg-radial-gradient-amber text-4xl text-slate-950 motion-safe:animate-pulse hover:motion-safe:animate-none shadow-lg hover:shadow-xl hover:shadow-amber-700 shadow-amber-700 active:shadow-none hover:brightness-110"
+                  onclick="printScores()"
+                >
+                  Print
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="score-window h-[113px] mb-8 w-[170px]">
             <div class="base-numbers text-slate-300 text-opacity-25">00</div>
             <div id="6" class="base-numbers text-orange-500 z-10">00</div>
           </div>
         </div>
       </section>
-      <section
+      <!-- <section
         class="print:hidden text-center shadow-xl shadow-lime-300 p-5 w-[400px] bg-teal-500 rounded-md flex flex-col justify-center shrink-0 font-digital-mono"
       >
         <h1 class="text-4xl font-bold text-slate-900 text-center mb-10">
@@ -69,10 +125,10 @@
           Fake it till ya make it!
         </p>
       </section>
-    </div>
+    </div> -->
 
     <!-- BUTTONS -->
-    <div class="print:hidden flex justify-center mt-20 font-digital-mono">
+    <!-- <div class="print:hidden flex justify-center mt-20 font-digital-mono">
       <div
         class="relative h-40 w-40 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 mr-20 select-none shrink-0"
       >
@@ -123,7 +179,7 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
     <script src="./main.js"></script>
   </body>
 </html>
