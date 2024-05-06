@@ -6,34 +6,42 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Pinball Wizard</title>
   </head>
-  <body class="print:bg-white bg-slate-950">
-    <div class="flex justify-center mt-5 2xl:mt-20">
+  <body class="print:bg-white bg-slate-950 flex flex-col items-center">
+    <div class="flex justify-center my-5 2xl:mt-10">
       <section
         class="print:bg-white print:shadow-none shadow-xl shadow-lime-300 p-5 bg-teal-500 rounded-md mr-5 font-digital-mono-italic"
       >
-      <span class="flex print:flex-col">
-        <div class="score-window h-[113px] w-[489px] mb-8 shrink-0 mr-10">
-          <div class="base-numbers text-slate-300 text-opacity-25">000000</div>
-          <div id="1" class="base-numbers text-orange-500 z-10">000000</div>
-        </div>
+        <span class="flex print:flex-col">
+          <div class="score-window h-[113px] w-[489px] mb-8 shrink-0 mr-10">
+            <div class="base-numbers text-slate-300 text-opacity-25">
+              000000
+            </div>
+            <div id="1" class="base-numbers text-orange-500 z-10">000000</div>
+          </div>
 
-        <div class="score-window h-[113px] w-[489px] mb-8 shrink-0">
-          <div class="base-numbers text-slate-300 text-opacity-25">000000</div>
-          <div id="2" class="base-numbers text-orange-500 z-10">000000</div>
-        </div>
-      </span>
-       
-      <span class="flex print:flex-col">
-        <div class="score-window h-[113px] w-[489px] mb-8 shrink-0 mr-10">
-          <div class="base-numbers text-slate-300 text-opacity-25">000000</div>
-          <div id="3" class="base-numbers text-orange-500 z-10">000000</div>
-        </div>
+          <div class="score-window h-[113px] w-[489px] mb-8 shrink-0">
+            <div class="base-numbers text-slate-300 text-opacity-25">
+              000000
+            </div>
+            <div id="2" class="base-numbers text-orange-500 z-10">000000</div>
+          </div>
+        </span>
 
-        <div class="score-window h-[113px] w-[489px] mb-8 shrink-0">
-          <div class="base-numbers text-slate-300 text-opacity-25">000000</div>
-          <div id="4" class="base-numbers text-orange-500 z-10">000000</div>
-        </div>
-      </span>
+        <span class="flex print:flex-col">
+          <div class="score-window h-[113px] w-[489px] mb-8 shrink-0 mr-10">
+            <div class="base-numbers text-slate-300 text-opacity-25">
+              000000
+            </div>
+            <div id="3" class="base-numbers text-orange-500 z-10">000000</div>
+          </div>
+
+          <div class="score-window h-[113px] w-[489px] mb-8 shrink-0">
+            <div class="base-numbers text-slate-300 text-opacity-25">
+              000000
+            </div>
+            <div id="4" class="base-numbers text-orange-500 z-10">000000</div>
+          </div>
+        </span>
 
         <!-- small score windows -->
         <div class="flex justify-between print:flex-col">
@@ -43,7 +51,7 @@
           </div>
           <div class="print:hidden flex justify-center mt-20 font-digital-mono">
             <div
-              class="relative h-40 w-40 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 mr-20 select-none shrink-0"
+              class="relative h-36 w-36 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 mr-20 select-none shrink-0"
             >
               <div class="absolute inset-5 rounded-full bg-lime-900"></div>
               <div
@@ -58,9 +66,9 @@
                 </button>
               </div>
             </div>
-      
+
             <div
-              class="relative h-40 w-40 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 mr-20 select-none shrink-0"
+              class="relative h-36 w-36 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 mr-20 select-none shrink-0"
             >
               <div class="absolute inset-5 rounded-full bg-red-950"></div>
               <div
@@ -75,9 +83,9 @@
                 </button>
               </div>
             </div>
-      
+
             <div
-              class="relative h-40 w-40 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 select-none shrink-0"
+              class="relative h-36 w-36 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 select-none shrink-0"
             >
               <div class="absolute inset-5 rounded-full bg-amber-900"></div>
               <div
@@ -99,33 +107,35 @@
           </div>
         </div>
       </section>
-      <!-- <section
-        class="print:hidden text-center shadow-xl shadow-lime-300 p-5 w-[400px] bg-teal-500 rounded-md flex flex-col justify-center shrink-0 font-digital-mono"
-      >
-        <h1 class="text-4xl font-bold text-slate-900 text-center mb-10">
-          <div>⚡️Pinball Wizard⚡️</div>
-          <div>Score Generator</div>
-        </h1>
-        <p class="text-2xl text-teal-100 mb-5">
-          Got a vintage pinball machine backglass wall mounted or in a lightbox?
-        </p>
-        <p class="text-2xl text-teal-100 mb-5">
-          Fill those empty score windows and be a winner!
-        </p>
-        <p class="text-2xl text-teal-100 mb-5">
-          Generate random scores, print and stick 'em on your pinball machine
-          backglass.
-        </p>
+    </div>
+    <section
+      class="print:hidden w-3/4 2xl:w-1/2 shrink-0 mt-5 font-digital-mono text-teal-100 tracking-widest"
+    >
+      <h1 class="font-bold text-center mb-5">
+        <div class="text-7xl">⚡️Pinball Wizard⚡️</div>
+        <div class="text-6xl">Score Generator</div>
+      </h1>
+      <div class="flex text-4xl">
+        <div class="mr-20 shadow-xl shadow-lime-300 p-5 rounded-md">
+          <p class="mb-5">
+            Got a vintage pinball machine backglass wall mounted or in a
+            lightbox?
+          </p>
+          <p>Fill those empty score windows and be a winner!</p>
+        </div>
+        <div class="shadow-xl shadow-lime-300 p-5 rounded-md">
+          <p class="mb-5">
+            Generate random scores, print and stick 'em on your pinball machine
+            backglass.
+          </p>
 
-        <p class="text-2xl text-teal-100 mb-5">
-          Sized specifically for machines made by Bally between 1977 and 1988,
-          model depending.
-        </p>
-        <p class="text-3xl text-center font-bold text-slate-900">
-          Fake it till ya make it!
-        </p>
-      </section>
-    </div> -->
+          <p>Sized specifically for machines made by Bally, model depending.</p>
+        </div>
+      </div>
+      <p class="text-5xl text-center font-bold mt-10">
+        Fake it till ya make it!
+      </p>
+    </section>
 
     <!-- BUTTONS -->
     <!-- <div class="print:hidden flex justify-center mt-20 font-digital-mono">
