@@ -855,11 +855,6 @@ video {
   color: rgb(204 251 241 / var(--tw-text-opacity));
 }
 
-.text-teal-50 {
-  --tw-text-opacity: 1;
-  color: rgb(240 253 250 / var(--tw-text-opacity));
-}
-
 .text-opacity-25 {
   --tw-text-opacity: 0.25;
 }
