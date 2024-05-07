@@ -7,7 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 8rem;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
   print-color-adjust: exact;
   -webkit-print-color-adjust: exact;
