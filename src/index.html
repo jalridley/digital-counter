@@ -12,7 +12,8 @@
     <section
       class="print:bg-white print:shadow-none shadow-xl shadow-lime-300 p-3 md:p-6 lg:p-8 bg-radial-gradient-teal rounded-md font-digital-mono-italic"
     >
-      <span class="flex flex-col items-center mb-6">
+      <!-- first 2 score windows -->
+      <div class="flex flex-col items-center">
         <div
           class="score-window text-[88px] h-[79px] w-[335px] print:text-9xl print:h-[113px] print:w-[489px] mb-6"
         >
@@ -21,35 +22,30 @@
         </div>
 
         <div
-          class="score-window text-[88px] h-[79px] w-[335px] print:text-9xl print:h-[113px] print:w-[489px]"
+          class="score-window text-[88px] h-[79px] w-[335px] print:text-9xl print:h-[113px] print:w-[489px] mb-6"
         >
           <div class="base-numbers text-slate-300 text-opacity-25">000000</div>
           <div id="2" class="base-numbers text-orange-500 z-10">000000</div>
         </div>
-      </span>
 
-      <!-- small score windows -->
-      <span class="flex justify-center items-center mb-6">
-        <div
-          class="score-window text-[88px] h-[79px] w-[116px] print:text-9xl print:h-[113px] print:w-[170px]"
-        >
-          <div class="base-numbers text-slate-300 text-opacity-25">00</div>
-          <div id="5" class="base-numbers text-orange-500 z-10">00</div>
+        <!-- small score windows and logo -->
+        <div class="flex justify-between items-center mb-6 w-[335px]">
+          <div
+            class="score-window text-[88px] h-[79px] w-[116px] print:text-9xl print:h-[113px] print:w-[170px] print:mr-6"
+          >
+            <div class="base-numbers text-slate-300 text-opacity-25">00</div>
+            <div id="5" class="base-numbers text-orange-500 z-10">00</div>
+          </div>
+          <div class="print:hidden text-7xl">⚡️</div>
+          <div
+            class="score-window text-[88px] h-[79px] w-[116px] print:text-9xl print:h-[113px] print:w-[170px]"
+          >
+            <div class="base-numbers text-slate-300 text-opacity-25">00</div>
+            <div id="6" class="base-numbers text-orange-500 z-10">00</div>
+          </div>
         </div>
-
-        <!-- TEMP LOGO -->
-        <div class="text-7xl">⚡️</div>
 
         <!-- last 2 score windows -->
-        <div
-          class="score-window text-[88px] h-[79px] w-[116px] print:text-9xl print:h-[113px] print:w-[170px]"
-        >
-          <div class="base-numbers text-slate-300 text-opacity-25">00</div>
-          <div id="6" class="base-numbers text-orange-500 z-10">00</div>
-        </div>
-      </span>
-
-      <span class="flex flex-col items-center mb-6">
         <div
           class="score-window text-[88px] h-[79px] w-[335px] print:text-9xl print:h-[113px] print:w-[489px] mb-6"
         >
@@ -58,17 +54,15 @@
         </div>
 
         <div
-          class="score-window text-[88px] h-[79px] w-[335px] print:text-9xl print:h-[113px] print:w-[489px]"
+          class="score-window text-[88px] h-[79px] w-[335px] print:text-9xl print:h-[113px] print:w-[489px] mb-8"
         >
           <div class="base-numbers text-slate-300 text-opacity-25">000000</div>
           <div id="4" class="base-numbers text-orange-500 z-10">000000</div>
         </div>
-      </span>
+      </div>
 
       <!-- BUTTONS -->
-      <div
-        class="print:hidden flex justify-center font-digital-mono md:mt-8 text-xl"
-      >
+      <div class="print:hidden flex justify-center font-digital-mono text-xl">
         <div
           class="relative h-28 w-28 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 mr-2 md:mr-4 select-none shrink-0"
         >
@@ -123,7 +117,7 @@
     </section>
 
     <!-- TITLE -->
-    <span
+    <div
       class="print:hidden font-bold font-digital-mono text-shadow-light text-teal-50 tracking-widest mb-5 mt-20"
     >
       <h1
@@ -136,10 +130,9 @@
         <span class="relative z-10 top-6 md:top-10">Wizard</span>
       </h1>
       <h2 class="text-center text-4xl md:text-6xl">Score Generator</h2>
-    </span>
+    </div>
 
     <!-- TEXT -->
-
     <section
       class="print:hidden w-full 2xl:w-1/2 mt-5 font-digital-mono text-teal-50 tracking-widest"
     >
