@@ -1133,6 +1133,10 @@ video {
 }
 
 @media print {
+  .print\:mr-6 {
+    margin-right: 1.5rem;
+  }
+
   .print\:hidden {
     display: none;
   }
