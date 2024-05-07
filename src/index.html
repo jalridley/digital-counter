@@ -13,11 +13,9 @@
       <section
         class="print:bg-white print:shadow-none shadow-xl shadow-lime-300 p-3 md:p-6 lg:p-8 bg-radial-gradient-teal rounded-md font-digital-mono-italic"
       >
-        <span
-          class="flex flex-col items-center md:flex-row print:flex-col mb-6 md:mb-10 print:mb-4"
-        >
+        <span class="flex flex-col items-center mb-6">
           <div
-            class="score-window text-[88px] h-[79px] w-[329px] print:text-9xl print:h-[113px] print:w-[489px] md:mr-10 mb-6 md:mb-0"
+            class="score-window text-[88px] h-[79px] w-[335px] print:text-9xl print:h-[113px] print:w-[489px] mb-6"
           >
             <div class="base-numbers text-slate-300 text-opacity-25">
               000000
@@ -26,7 +24,7 @@
           </div>
 
           <div
-            class="score-window text-[88px] h-[79px] w-[329px] print:text-9xl print:h-[113px] print:w-[489px]"
+            class="score-window text-[88px] h-[79px] w-[335px] print:text-9xl print:h-[113px] print:w-[489px]"
           >
             <div class="base-numbers text-slate-300 text-opacity-25">
               000000
@@ -36,33 +34,29 @@
         </span>
 
         <!-- small score windows -->
-        <span
-          class="flex justify-between items-center print:flex-col mb-6 md:mb-10 print:mb-4"
-        >
+        <span class="flex justify-center items-center mb-6">
           <div
-            class="score-window text-[88px] h-[79px] w-[110px] print:text-9xl print:h-[113px] print:w-[170px] print:mb-4"
+            class="score-window text-[88px] h-[79px] w-[116px] print:text-9xl print:h-[113px] print:w-[170px]"
           >
             <div class="base-numbers text-slate-300 text-opacity-25">00</div>
             <div id="5" class="base-numbers text-orange-500 z-10">00</div>
           </div>
 
           <!-- TEMP LOGO -->
-          <div class="print:hidden text-7xl">⚡️</div>
+          <div class="text-7xl">⚡️</div>
 
           <!-- last 2 score windows -->
           <div
-            class="score-window text-[88px] h-[79px] w-[110px] print:text-9xl print:h-[113px] print:w-[170px]"
+            class="score-window text-[88px] h-[79px] w-[116px] print:text-9xl print:h-[113px] print:w-[170px]"
           >
             <div class="base-numbers text-slate-300 text-opacity-25">00</div>
             <div id="6" class="base-numbers text-orange-500 z-10">00</div>
           </div>
         </span>
 
-        <span
-          class="flex flex-col items-center md:flex-row print:flex-col mb-6 md:mb-10 print:mb-4"
-        >
+        <span class="flex flex-col items-center mb-6">
           <div
-            class="score-window text-[88px] h-[79px] w-[329px] print:text-9xl print:h-[113px] print:w-[489px] md:mr-10 mb-6 md:mb-0"
+            class="score-window text-[88px] h-[79px] w-[335px] print:text-9xl print:h-[113px] print:w-[489px] mb-6"
           >
             <div class="base-numbers text-slate-300 text-opacity-25">
               000000
@@ -71,7 +65,7 @@
           </div>
 
           <div
-            class="score-window text-[88px] h-[79px] w-[329px] print:text-9xl print:h-[113px] print:w-[489px]"
+            class="score-window text-[88px] h-[79px] w-[335px] print:text-9xl print:h-[113px] print:w-[489px]"
           >
             <div class="base-numbers text-slate-300 text-opacity-25">
               000000
@@ -82,27 +76,10 @@
 
         <!-- BUTTONS -->
         <div
-          class="print:hidden flex justify-center font-digital-mono md:mt-8 text-xl md:text-4xl"
+          class="print:hidden flex justify-center font-digital-mono md:mt-8 text-xl"
         >
           <div
-            class="relative h-24 w-24 md:h-36 md:w-36 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 mr-4 md:mr-20 select-none shrink-0"
-          >
-            <div class="absolute inset-5 rounded-full bg-lime-900"></div>
-            <div
-              class="absolute inset-5 -translate-y-3 rounded-full bg-lime-800 hover:-translate-y-4 active:-translate-y-1.5 transition-transform duration-700 will-change-transform hover:duration-300 active:duration-75"
-            >
-              <button
-                id="play-button"
-                class="w-full h-full rounded-full bg-radial-gradient-green text-slate-950 motion-safe:animate-pulse hover:motion-safe:animate-none shadow-lg shadow-lime-700 hover:shadow-xl hover:shadow-lime-700 active:shadow-none hover:brightness-110"
-                onclick="generateRandomNumbers(6)"
-              >
-                Play
-              </button>
-            </div>
-          </div>
-
-          <div
-            class="relative h-24 w-24 md:h-36 md:w-36 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 mr-4 md:mr-20 select-none shrink-0"
+            class="relative h-28 w-28 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 mr-2 md:mr-4 select-none shrink-0"
           >
             <div class="absolute inset-5 rounded-full bg-red-950"></div>
             <div
@@ -119,7 +96,24 @@
           </div>
 
           <div
-            class="relative h-24 w-24 md:h-36 md:w-36 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 select-none shrink-0"
+            class="relative h-28 w-28 top-5 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 mr-2 md:mr-4 mb-5 select-none shrink-0"
+          >
+            <div class="absolute inset-5 rounded-full bg-lime-900"></div>
+            <div
+              class="absolute inset-5 -translate-y-3 rounded-full bg-lime-800 hover:-translate-y-4 active:-translate-y-1.5 transition-transform duration-700 will-change-transform hover:duration-300 active:duration-75"
+            >
+              <button
+                id="play-button"
+                class="w-full h-full rounded-full bg-radial-gradient-green text-slate-950 motion-safe:animate-pulse hover:motion-safe:animate-none shadow-lg shadow-lime-700 hover:shadow-xl hover:shadow-lime-700 active:shadow-none hover:brightness-110"
+                onclick="generateRandomNumbers(6)"
+              >
+                Play
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="relative h-28 w-28 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 select-none shrink-0"
           >
             <div class="absolute inset-5 rounded-full bg-amber-900"></div>
             <div
