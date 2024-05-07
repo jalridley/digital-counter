@@ -756,7 +756,7 @@ video {
 }
 
 .bg-radial-gradient-teal {
-  background-image: radial-gradient(#a7f3d0,  #2dd4bf, #14b8a6);
+  background-image: radial-gradient(#d1fae5,  #2dd4bf, #14b8a6);
 }
 
 .from-slate-300 {
@@ -863,11 +863,6 @@ video {
 .text-teal-50 {
   --tw-text-opacity: 1;
   color: rgb(240 253 250 / var(--tw-text-opacity));
-}
-
-.text-yellow-300 {
-  --tw-text-opacity: 1;
-  color: rgb(253 224 71 / var(--tw-text-opacity));
 }
 
 .text-opacity-25 {
