@@ -32,15 +32,15 @@
 
 @font-face {
   font-family: 'digital';
-  src: url('/src/fonts/digital-7.ttf');
+  src: url('./fonts/digital-7.ttf');
 }
 
 @font-face {
   font-family: 'digital-mono-italic';
-  src: url('/src/fonts/digital-7-monoitalic.ttf');
+  src: url('./fonts/digital-7-monoitalic.ttf');
 }
 
 @font-face {
   font-family: 'digital-mono';
-  src: url('/src/fonts/digital-7-mono.ttf');
+  src: url('./fonts/digital-7-mono.ttf');
 }
