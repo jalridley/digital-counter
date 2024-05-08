@@ -6,188 +6,168 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Pinball Wizard</title>
   </head>
-  <body class="print:bg-white bg-slate-950">
-    <div class="flex justify-center mt-20">
-      <section
-        class="print:bg-white print:shadow-none shadow-xl shadow-lime-300 p-5 w-[529px] bg-teal-500 rounded-md mr-5 font-digital-mono-italic"
+  <body class="print:bg-white bg-slate-950 flex flex-col items-center md:pt-10">
+    <div class="mt-10 flex flex-col items-center w-full">
+      <!-- TITLE -->
+      <div
+        class="print:hidden font-bold font-digital text-shadow-light text-teal-50 tracking-[0.3em] mb-5"
       >
-        <div
-          class="relative flex text-9xl bg-slate-900 h-[113px] mb-8 print-color-adjust"
+        <h1
+          class="relative text-5xl md:text-7xl flex justify-center items-center -rotate-12 mb-8"
         >
-          <div
-            class="relative flex flex-1 items-center justify-center tracking-[.15em] text-slate-300 text-opacity-25 mr-[-.15em]"
-          >
-            000000
-          </div>
-          <div
-            id="1"
-            class="absolute inset-0 flex items-center justify-center flex-1 tracking-[.15em] text-orange-500 mr-[-.15em]"
-          >
-            000000
-          </div>
-        </div>
-
-        <div
-          class="relative flex text-9xl bg-slate-900 h-[113px] mb-8 print-color-adjust"
-        >
-          <div
-            class="relative flex flex-1 items-center justify-center tracking-[.15em] text-slate-300 text-opacity-25 mr-[-.15em]"
-          >
-            000000
-          </div>
-          <div
-            id="2"
-            class="absolute inset-0 flex items-center justify-center flex-1 tracking-[.15em] text-orange-500 mr-[-.15em]"
-          >
-            000000
-          </div>
-        </div>
-
-        <div
-          class="relative flex text-9xl bg-slate-900 h-[113px] mb-8 print-color-adjust"
-        >
-          <div
-            class="relative flex flex-1 items-center justify-center tracking-[.15em] text-slate-300 text-opacity-25 mr-[-.15em]"
-          >
-            000000
-          </div>
-          <div
-            id="3"
-            class="absolute inset-0 flex items-center justify-center flex-1 tracking-[.15em] text-orange-500 mr-[-.15em]"
-          >
-            000000
-          </div>
-        </div>
-
-        <div
-          class="relative flex text-9xl bg-slate-900 h-[113px] mb-8 print-color-adjust"
-        >
-          <div
-            class="relative flex flex-1 items-center justify-center tracking-[.15em] text-slate-300 text-opacity-25 mr-[-.15em]"
-          >
-            000000
-          </div>
-          <div
-            id="4"
-            class="absolute inset-0 flex items-center justify-center flex-1 tracking-[.15em] text-orange-500 mr-[-.15em]"
-          >
-            000000
-          </div>
-        </div>
-
-        <!-- small score windows -->
-        <div class="flex justify-between">
-          <div
-            class="relative flex text-9xl bg-slate-900 h-[113px] print-color-adjust w-1/3"
-          >
-            <div
-              class="relative flex flex-1 items-center justify-center tracking-[.15em] text-slate-300 text-opacity-25 mr-[-.15em]"
-            >
-              00
-            </div>
-            <div
-              id="5"
-              class="absolute inset-0 flex items-center justify-center flex-1 tracking-[.15em] text-orange-500 mr-[-.15em]"
-            >
-              00
-            </div>
-          </div>
-          <div
-            class="relative flex text-9xl bg-slate-900 h-[113px] print-color-adjust w-1/3"
-          >
-            <div
-              class="relative flex flex-1 items-center justify-center tracking-[.15em] text-slate-300 text-opacity-25 mr-[-.15em]"
-            >
-              00
-            </div>
-            <div
-              id="6"
-              class="absolute inset-0 flex items-center justify-center flex-1 tracking-[.15em] text-orange-500 mr-[-.15em]"
-            >
-              00
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        class="print:hidden text-center shadow-xl shadow-lime-300 p-5 w-[400px] bg-teal-500 rounded-md flex flex-col justify-center shrink-0 font-digital-mono"
-      >
-        <h1 class="text-4xl font-bold text-slate-900 text-center mb-10">
-          <div>⚡️Pinball Wizard⚡️</div>
-          <div>Score Generator</div>
+          <span class="absolute text-8xl md:text-9xl z-0">⚡️</span>
+          <span class="relative z-10 bottom-6 md:bottom-8">Pinball</span>
+          <span class="relative z-10 top-6 md:top-8">Wizard</span>
         </h1>
-        <p class="text-2xl text-teal-100 mb-5">
-          Got a vintage pinball machine backglass wall mounted or in a lightbox?
-        </p>
-        <p class="text-2xl text-teal-100 mb-5">
-          Fill those empty score windows and be a winner!
-        </p>
-        <p class="text-2xl text-teal-100 mb-5">
-          Generate random scores, print and stick 'em on your pinball machine
-          backglass.
-        </p>
+        <h2 class="text-center text-4xl md:text-5xl">Score Generator</h2>
+      </div>
 
-        <p class="text-2xl text-teal-100 mb-5">
-          Sized specifically for machines made by Bally between 1977 and 1988,
-          model depending.
-        </p>
-        <p class="text-3xl text-center font-bold text-slate-900">
-          Fake it till ya make it!
-        </p>
+      <!-- SCORE SECTION -->
+      <section
+        class="print:bg-white print:shadow-none shadow-xl shadow-lime-300 px-3 py-10 md:p-10 bg-radial-gradient-teal md:rounded-md font-digital-mono-italic w-full md:w-fit"
+      >
+        <!-- first 2 score windows -->
+        <div class="flex flex-col items-center">
+          <div
+            class="score-window text-[88px] h-[79px] w-[335px] print:text-9xl print:h-[113px] print:w-[489px] mb-6"
+          >
+            <div class="base-numbers text-slate-300 text-opacity-25">
+              000000
+            </div>
+            <div id="1" class="base-numbers text-orange-500 z-10">000000</div>
+          </div>
+
+          <div
+            class="score-window text-[88px] h-[79px] w-[335px] print:text-9xl print:h-[113px] print:w-[489px] mb-6"
+          >
+            <div class="base-numbers text-slate-300 text-opacity-25">
+              000000
+            </div>
+            <div id="2" class="base-numbers text-orange-500 z-10">000000</div>
+          </div>
+
+          <!-- small score windows and logo -->
+          <div class="flex justify-between items-center mb-6 w-[335px]">
+            <div
+              class="score-window text-[88px] h-[79px] w-[116px] print:text-9xl print:h-[113px] print:w-[170px] print:mr-6"
+            >
+              <div class="base-numbers text-slate-300 text-opacity-25">00</div>
+              <div id="5" class="base-numbers text-orange-500 z-10">00</div>
+            </div>
+            <div class="print:hidden text-7xl text-shadow-light">⚡️</div>
+            <div
+              class="score-window text-[88px] h-[79px] w-[116px] print:text-9xl print:h-[113px] print:w-[170px]"
+            >
+              <div class="base-numbers text-slate-300 text-opacity-25">00</div>
+              <div id="6" class="base-numbers text-orange-500 z-10">00</div>
+            </div>
+          </div>
+
+          <!-- last 2 score windows -->
+          <div
+            class="score-window text-[88px] h-[79px] w-[335px] print:text-9xl print:h-[113px] print:w-[489px] mb-6"
+          >
+            <div class="base-numbers text-slate-300 text-opacity-25">
+              000000
+            </div>
+            <div id="3" class="base-numbers text-orange-500 z-10">000000</div>
+          </div>
+
+          <div
+            class="score-window text-[88px] h-[79px] w-[335px] print:text-9xl print:h-[113px] print:w-[489px] mb-10"
+          >
+            <div class="base-numbers text-slate-300 text-opacity-25">
+              000000
+            </div>
+            <div id="4" class="base-numbers text-orange-500 z-10">000000</div>
+          </div>
+        </div>
+
+        <!-- buttons -->
+        <div class="print:hidden flex justify-center font-digital-mono text-xl">
+          <div
+            class="relative h-28 w-28 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 mr-2 md:mr-4 select-none shrink-0 shadow-md shadow-slate-700"
+          >
+            <div class="absolute inset-5 rounded-full bg-red-950"></div>
+            <div
+              class="absolute inset-5 -translate-y-3 rounded-full bg-red-800 hover:-translate-y-4 active:-translate-y-1.5 transition-transform duration-700 will-change-transform hover:duration-300 active:duration-75"
+            >
+              <button
+                id="reset-button"
+                class="w-full h-full rounded-full bg-radial-gradient-red text-slate-950 motion-safe:animate-pulse hover:motion-safe:animate-none shadow-lg hover:shadow-xl hover:shadow-red-800 shadow-red-800 active:shadow-none hover:brightness-110"
+                onclick="resetToZero(6)"
+              >
+                Reset
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="relative h-28 w-28 top-5 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 mr-2 md:mr-4 mb-5 select-none shrink-0 shadow-md shadow-slate-700"
+          >
+            <div class="absolute inset-5 rounded-full bg-lime-900"></div>
+            <div
+              class="absolute inset-5 -translate-y-3 rounded-full bg-lime-800 hover:-translate-y-4 active:-translate-y-1.5 transition-transform duration-700 will-change-transform hover:duration-300 active:duration-75"
+            >
+              <button
+                id="play-button"
+                class="w-full h-full rounded-full bg-radial-gradient-green text-slate-950 motion-safe:animate-pulse hover:motion-safe:animate-none shadow-lg shadow-lime-700 hover:shadow-xl hover:shadow-lime-700 active:shadow-none hover:brightness-110"
+                onclick="generateRandomNumbers(6)"
+              >
+                Play
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="relative h-28 w-28 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 select-none shrink-0 shadow-md shadow-slate-700"
+          >
+            <div class="absolute inset-5 rounded-full bg-amber-900"></div>
+            <div
+              class="absolute inset-5 -translate-y-3 rounded-full bg-amber-800 hover:-translate-y-4 active:-translate-y-1.5 transition-transform duration-700 will-change-transform hover:duration-300 active:duration-75"
+            >
+              <button
+                id="print-button"
+                class="w-full h-full rounded-full bg-radial-gradient-amber text-slate-950 motion-safe:animate-pulse hover:motion-safe:animate-none shadow-lg hover:shadow-xl hover:shadow-amber-700 shadow-amber-700 active:shadow-none hover:brightness-110"
+                onclick="printScores()"
+              >
+                Print
+              </button>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
-    <div class="print:hidden flex justify-center mt-20 font-digital-mono">
-      <div
-        class="relative h-40 w-40 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 mr-20 select-none"
-      >
-        <div class="absolute inset-5 rounded-full bg-lime-900"></div>
-        <div
-          class="absolute inset-5 -translate-y-3 rounded-full bg-lime-800 hover:-translate-y-4 active:-translate-y-1.5 transition-transform duration-700 will-change-transform hover:duration-300 active:duration-75"
-        >
-          <button
-            id="play-button"
-            class="w-full h-full rounded-full bg-radial-gradient-green text-4xl text-slate-950 motion-safe:animate-pulse hover:motion-safe:animate-none shadow-lg shadow-lime-700 hover:shadow-xl hover:shadow-lime-700 active:shadow-none hover:brightness-110"
-            onclick="generateRandomNumbers(6)"
-          >
-            Play
-          </button>
-        </div>
-      </div>
 
-      <div
-        class="relative h-40 w-40 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 mr-20 select-none"
-      >
-        <div class="absolute inset-5 rounded-full bg-red-950"></div>
+    <!-- TEXT -->
+    <section
+      class="print:hidden w-full 2xl:w-1/2 font-digital text-teal-50 tracking-[0.2em] md:px-5 mt-10 md:mt-32"
+    >
+      <div class="md:flex text-3xl md:text-4xl">
         <div
-          class="absolute inset-5 -translate-y-3 rounded-full bg-red-800 hover:-translate-y-4 active:-translate-y-1.5 transition-transform duration-700 will-change-transform hover:duration-300 active:duration-75"
+          class="md:mr-10 shadow-lg shadow-lime-300 p-5 md:rounded-md md:w-1/2 mb-2 md:mb-0"
         >
-          <button
-            id="reset-button"
-            class="w-full h-full rounded-full bg-radial-gradient-red text-4xl text-slate-950 motion-safe:animate-pulse hover:motion-safe:animate-none shadow-lg hover:shadow-xl hover:shadow-red-800 shadow-red-800 active:shadow-none hover:brightness-110"
-            onclick="resetToZero(6)"
-          >
-            Reset
-          </button>
+          <p class="mb-10">
+            Got a vintage pinball machine backglass wall mounted or in a
+            lightbox?
+          </p>
+          <p>Fill those empty score windows and be a winner!</p>
         </div>
-      </div>
+        <div class="shadow-lg shadow-lime-300 p-5 md:rounded-md md:w-1/2">
+          <p class="mb-10">
+            Generate random scores, print, cut, and stick 'em on your pinball
+            machine backglass.
+          </p>
 
-      <div
-        class="relative h-40 w-40 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 select-none"
-      >
-        <div class="absolute inset-5 rounded-full bg-amber-900"></div>
-        <div
-          class="absolute inset-5 -translate-y-3 rounded-full bg-amber-800 hover:-translate-y-4 active:-translate-y-1.5 transition-transform duration-700 will-change-transform hover:duration-300 active:duration-75"
-        >
-          <button
-            id="print-button"
-            class="w-full h-full rounded-full bg-radial-gradient-amber text-4xl text-slate-950 motion-safe:animate-pulse hover:motion-safe:animate-none shadow-lg hover:shadow-xl hover:shadow-amber-700 shadow-amber-700 active:shadow-none hover:brightness-110"
-            onclick="printScores()"
-          >
-            Print
-          </button>
+          <p>Sized specifically for machines made by Bally, model depending.</p>
         </div>
       </div>
-    </div>
+      <p
+        class="text-4xl md:text-5xl text-center font-bold my-10 text-shadow-light"
+      >
+        Fake it till ya make it!
+      </p>
+    </section>
     <script src="./main.js"></script>
   </body>
 </html>

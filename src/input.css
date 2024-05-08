@@ -2,7 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-.print-color-adjust {
+.score-window {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
   print-color-adjust: exact;
   -webkit-print-color-adjust: exact;
+}
+
+.base-numbers {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  flex: 1 1 0%;
+  align-items: center;
+  letter-spacing: 0.15em;
+  padding-left: 0.15em;
+}
+
+.text-shadow {
+  text-shadow: 6px 7px 0px black;
+}
+
+.text-shadow-light {
+  text-shadow: 3px 3px 0px green;
 }
