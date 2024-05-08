@@ -29,3 +29,18 @@
 .text-shadow-light {
   text-shadow: 3px 3px 0px green;
 }
+
+@font-face {
+  font-family: 'digital';
+  src: url('/src/fonts/digital-7.ttf');
+}
+
+@font-face {
+  font-family: 'digital-mono-italic';
+  src: url('/src/fonts/digital-7-monoitalic.ttf');
+}
+
+@font-face {
+  font-family: 'digital-mono';
+  src: url('/src/fonts/digital-7-mono.ttf');
+}

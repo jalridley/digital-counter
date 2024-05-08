@@ -1,18 +1,12 @@
-const plugin = require('tailwindcss/plugin');
-const defaultTheme = require('tailwindcss/defaultTheme');
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
     extend: {
       fontFamily: {
-        digital: ['digital', ...defaultTheme.fontFamily.sans],
-        'digital-mono-italic': [
-          'digital-mono-italic',
-          ...defaultTheme.fontFamily.sans,
-        ],
-        'digital-mono': ['digital-mono', ...defaultTheme.fontFamily.sans],
+        digital: ['digital', 'sans'],
+        'digital-mono-italic': ['digital-mono-italic', 'sans'],
+        'digital-mono': ['digital-mono', 'sans'],
       },
       backgroundImage: {
         'radial-gradient-green': 'radial-gradient(#d9f99d, #84cc16, #65a30d)',
@@ -22,24 +16,4 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    plugin(function ({ addBase }) {
-      addBase({
-        '@font-face': [
-          {
-            fontFamily: 'digital',
-            src: 'url(/src/fonts/digital-7.ttf)',
-          },
-          {
-            fontFamily: 'digital-mono-italic',
-            src: 'url(/src/fonts/digital-7-monoitalic.ttf)',
-          },
-          {
-            fontFamily: 'digital-mono',
-            src: 'url(/src/fonts/digital-7-mono.ttf)',
-          },
-        ],
-      });
-    }),
-  ],
 };
