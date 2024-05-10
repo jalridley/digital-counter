@@ -52,7 +52,7 @@ function printScores() {
 
 function handleButtonTouch(buttonId) {
   const button = document.getElementById(buttonId);
-  button.classList.remove('hover:brightness-110');
+  button.classList.remove('hover:motion-safe:animate-none');
   const buttonContainer = button.parentElement;
   buttonContainer.classList.remove(
     'hover:duration-300',
