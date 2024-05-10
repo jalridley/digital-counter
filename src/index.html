@@ -107,13 +107,18 @@
             class="relative h-28 w-28 rounded-full bg-slate-300 bg-gradient-to-b from-slate-300 to-slate-400 mr-2 md:mr-4 select-none shrink-0 shadow-md shadow-slate-700"
           >
             <div class="absolute inset-5 rounded-full bg-red-950"></div>
-            <div
+            <!-- <div
               class="absolute inset-5 -translate-y-3 rounded-full bg-red-800 hover:-translate-y-4 active:-translate-y-1.5 transition-transform duration-700 will-change-transform hover:duration-300 active:duration-75"
+            > -->
+            <div
+              id="reset-container"
+              class="absolute inset-5 -translate-y-3 rounded-full bg-red-800 active:-translate-y-1.5 active:duration-75 transition-transform duration-700 will-change-transform hover:duration-300 hover:-translate-y-4"
             >
               <button
                 id="reset-button"
                 class="w-full h-full rounded-full bg-radial-gradient-red text-slate-950 motion-safe:animate-pulse hover:motion-safe:animate-none shadow-lg hover:shadow-xl hover:shadow-red-800 shadow-red-800 active:shadow-none hover:brightness-110"
                 onclick="resetToZero(6)"
+                ontouchstart="handleButtonTouch(id)"
               >
                 Reset
               </button>
@@ -131,6 +136,7 @@
                 id="play-button"
                 class="w-full h-full rounded-full bg-radial-gradient-green text-slate-950 motion-safe:animate-pulse hover:motion-safe:animate-none shadow-lg shadow-lime-700 hover:shadow-xl hover:shadow-lime-700 active:shadow-none hover:brightness-110"
                 onclick="generateRandomNumbers(6)"
+                ontouchstart="handleButtonTouch(id)"
               >
                 Play
               </button>
@@ -148,6 +154,7 @@
                 id="print-button"
                 class="w-full h-full rounded-full bg-radial-gradient-amber text-slate-950 motion-safe:animate-pulse hover:motion-safe:animate-none shadow-lg hover:shadow-xl hover:shadow-amber-700 shadow-amber-700 active:shadow-none hover:brightness-110"
                 onclick="printScores()"
+                ontouchstart="handleButtonTouch(id)"
               >
                 Print
               </button>

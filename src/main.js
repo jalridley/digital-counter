@@ -49,3 +49,13 @@ function printScores() {
   removeAndAddAnimateClassTimer('print-button', 2000);
   window.print();
 }
+
+function handleButtonTouch(buttonId) {
+  const button = document.getElementById(buttonId);
+  button.classList.remove('hover:brightness-110');
+  const buttonContainer = button.parentElement;
+  buttonContainer.classList.remove(
+    'hover:duration-300',
+    'hover:-translate-y-4'
+  );
+}
