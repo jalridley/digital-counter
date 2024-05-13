@@ -1738,6 +1738,10 @@ video {
     width: fit-content;
   }
 
+  .md\:overflow-hidden {
+    overflow: hidden;
+  }
+
   .md\:rounded-md {
     border-radius: 0.375rem;
   }
