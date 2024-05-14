@@ -161,12 +161,12 @@
     </div>
 
     <section
-      class="print:hidden w-full lg:w-[924px] font-digital text-teal-50 tracking-[0.2em] md:px-5 mt-10 md:mt-32"
+      class="print:hidden w-full lg:w-[924px] font-digital text-teal-50 tracking-[0.2em] px-5 mt-10 md:mt-32"
     >
       <!-- TEXT -->
       <div class="md:flex text-3xl md:text-4xl">
         <div
-          class="md:mr-10 shadow-lg shadow-lime-300 p-5 md:rounded-md md:w-1/2 mb-2 md:mb-0"
+          class="md:mr-10 shadow-lg shadow-lime-300 p-5 rounded-md md:w-1/2 mb-2 md:mb-0"
         >
           <p class="mb-10">
             Got a vintage pinball machine backglass wall mounted or in a
@@ -175,28 +175,66 @@
           <p class="mb-10">Fill those empty score windows and be a winner!</p>
 
           <p>
-            <div class="flex items-center">
-              <svg class="w-8 h-8 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M21 3H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h5v2h8v-2h5a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 14H3V5h18m-5 6l-7 4V7"/></svg>
+            <span class="flex items-center">
+              <svg
+                class="w-8 h-8 mr-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M21 3H3c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h5v2h8v-2h5a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2m0 14H3V5h18m-5 6l-7 4V7"
+                />
+              </svg>
               <span>Generate scores</span>
-            </div>
-            <div class="flex items-center">
-              <svg class="w-8 h-8 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M19 8c1.66 0 3 1.34 3 3v6h-4v4H6v-4H2v-6c0-1.66 1.34-3 3-3h1V3h12v5zM8 5v3h8V5zm8 14v-4H8v4zm2-4h2v-4c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1v4h2v-2h12zm1-3.5c0 .55-.45 1-1 1s-1-.45-1-1s.45-1 1-1s1 .45 1 1"/></svg>
-              <span>print</span></div>
-            <div class="flex items-center">
-              <svg class="w-8 h-8 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M11 21H7v-2h4zm4.5-2H17v2h-4v-2h.2l-1.4-6.1l-2.5.6c-.1.5-.3.9-.5 1.3c-.9 1.5-2.8 1.9-4.3 1s-1.9-2.8-1-4.3s2.8-1.9 4.3-1c.4.2.7.6.9.9l2.5-.6l-.6-2.5c-.4-.1-.8-.3-1.2-.5C8 6.9 7.5 5 8.4 3.5s2.8-1.9 4.3-1s1.9 2.8 1 4.3c-.2.4-.6.7-.9.9zM7 11.8c-.7-.5-1.7-.2-2.2.5s-.2 1.7.5 2.1c.7.5 1.7.3 2.2-.5c.4-.7.2-1.7-.5-2.1M12.4 6c.5-.7.2-1.7-.5-2.2s-1.7-.2-2.2.5c-.4.7-.2 1.7.6 2.2c.7.4 1.7.2 2.1-.5m.4 5.3c-.2-.1-.4-.1-.5.1s-.1.4.1.5s.4.1.5-.1c.2-.2.1-.4-.1-.5M21 8.5L14.5 10l.5 2.2l7.5-1.8l.5-.7zM23 19h-4v2h4zM5 19H1v2h4z"/></svg>
+            </span>
+            <span class="flex items-center">
+              <svg
+                class="w-8 h-8 mr-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M19 8c1.66 0 3 1.34 3 3v6h-4v4H6v-4H2v-6c0-1.66 1.34-3 3-3h1V3h12v5zM8 5v3h8V5zm8 14v-4H8v4zm2-4h2v-4c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1v4h2v-2h12zm1-3.5c0 .55-.45 1-1 1s-1-.45-1-1s.45-1 1-1s1 .45 1 1"
+                />
+              </svg>
+              <span>print</span></span
+            >
+            <span class="flex items-center">
+              <svg
+                class="w-8 h-8 mr-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M11 21H7v-2h4zm4.5-2H17v2h-4v-2h.2l-1.4-6.1l-2.5.6c-.1.5-.3.9-.5 1.3c-.9 1.5-2.8 1.9-4.3 1s-1.9-2.8-1-4.3s2.8-1.9 4.3-1c.4.2.7.6.9.9l2.5-.6l-.6-2.5c-.4-.1-.8-.3-1.2-.5C8 6.9 7.5 5 8.4 3.5s2.8-1.9 4.3-1s1.9 2.8 1 4.3c-.2.4-.6.7-.9.9zM7 11.8c-.7-.5-1.7-.2-2.2.5s-.2 1.7.5 2.1c.7.5 1.7.3 2.2-.5c.4-.7.2-1.7-.5-2.1M12.4 6c.5-.7.2-1.7-.5-2.2s-1.7-.2-2.2.5c-.4.7-.2 1.7.6 2.2c.7.4 1.7.2 2.1-.5m.4 5.3c-.2-.1-.4-.1-.5.1s-.1.4.1.5s.4.1.5-.1c.2-.2.1-.4-.1-.5M21 8.5L14.5 10l.5 2.2l7.5-1.8l.5-.7zM23 19h-4v2h4zM5 19H1v2h4z"
+                />
+              </svg>
               <span>cut</span>
-            </div>
-            <div class="flex items-center">
-              <svg class="w-8 h-8 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="-7 -1.5 24 24"><path fill="currentColor" d="M3 11a1 1 0 0 0-1 1v7h6v-7a1 1 0 0 0-1-1zm1-5V1a1 1 0 1 1 2 0v5h1a1 1 0 0 1 1 1v2.17c1.165.413 2 1.524 2 2.83v7a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-7c0-1.306.835-2.417 2-2.83V7a1 1 0 0 1 1-1zm0 2v1h2V8z"/></svg>
+            </span>
+            <span class="flex items-center">
+              <svg
+                class="w-8 h-8 mr-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="-7 -1.5 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M3 11a1 1 0 0 0-1 1v7h6v-7a1 1 0 0 0-1-1zm1-5V1a1 1 0 1 1 2 0v5h1a1 1 0 0 1 1 1v2.17c1.165.413 2 1.524 2 2.83v7a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-7c0-1.306.835-2.417 2-2.83V7a1 1 0 0 1 1-1zm0 2v1h2V8z"
+                />
+              </svg>
               <span>stick</span>
-            </div>
+            </span>
           </p>
         </div>
-        <div class="shadow-lg shadow-lime-300 p-5 md:rounded-md md:w-1/2">
-          <div class="mb-10">Use a nonpermanent adhesive to stick the scores to the wall side your pinball machine backglass.</div>
-          <p >
-            Sized specifically for machines made by Bally, model depending.
-          </p>
+        <div class="shadow-lg shadow-lime-300 p-5 rounded-md md:w-1/2">
+          <div class="mb-10">
+            Use a nonpermanent adhesive to stick the scores to the wall side
+            your pinball machine backglass.
+          </div>
+          <p>Sized specifically for machines made by Bally, model depending.</p>
         </div>
       </div>
 
